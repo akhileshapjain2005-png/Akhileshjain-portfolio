@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-paper-50 text-ink-900 font-body antialiased transition-colors duration-300;
+  overflow-x: hidden;
+}
+
+.dark body {
+  @apply bg-ink-950 text-cloud-50;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+::selection {
+  @apply bg-violet/30 text-inherit;
+}
+
+:focus-visible {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Ambient page background: faint grid + soft violet/blue radial glows.   */
+/* Applied once at the app root so it reads as one continuous canvas      */
+/* rather than being redrawn per-section.                                 */
+/* ---------------------------------------------------------------------- */
+.app-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.dark .app-shell {
+  background-color: #050816;
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.app-shell::before,
+.app-shell::after {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  border-radius: 9999px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.dark .app-shell::before {
+  opacity: 1;
+  top: -10%;
+  left: 50%;
+  width: 1000px;
+  height: 750px;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, rgba(168, 85, 247, 0.22), transparent);
+  filter: blur(10px);
+}
+
+.dark .app-shell::after {
+  opacity: 1;
+  top: 20%;
+  right: -12%;
+  width: 750px;
+  height: 750px;
+  background:
+    radial-gradient(closest-side, rgba(59, 130, 246, 0.16), transparent 70%),
+    radial-gradient(closest-side at 30% 70%, rgba(236, 72, 153, 0.1), transparent 70%);
+  filter: blur(10px);
+}
+
+.section-shell {
+  @apply max-w-6xl mx-auto px-6 sm:px-8 py-16 sm:py-20 relative;
+}
+
+.eyebrow {
+  @apply font-mono text-xs tracking-[0.2em] uppercase text-violet-dim dark:text-violet-bright;
+}
+
+/* Glass card — the base surface used across every section */
+.card {
+  @apply rounded-[20px] border transition-all duration-300;
+  background: rgba(255, 255, 255, 0.75);
+  border-color: rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.dark .card {
+  background: rgba(15, 20, 38, 0.75);
+  border-color: rgba(139, 92, 246, 0.18);
+  backdrop-filter: blur(12px);
+}
+
+.card-hover {
+  @apply hover:-translate-y-1;
+}
+
+.dark .card-hover:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 12px 40px -12px rgba(139, 92, 246, 0.25);
+}
+
+.card-hover:hover {
+  box-shadow: 0 12px 30px -14px rgba(15, 23, 42, 0.15);
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white font-medium text-sm transition-all duration-200;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  box-shadow: 0 8px 24px -8px rgba(139, 92, 246, 0.5);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 10px 28px -8px rgba(139, 92, 246, 0.65);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border font-medium text-sm transition-colors duration-200;
+  border-color: rgba(15, 23, 42, 0.15);
+  color: inherit;
+}
+
+.dark .btn-secondary {
+  border-color: rgba(248, 250, 252, 0.15);
+}
+
+.btn-secondary:hover {
+  border-color: #8b5cf6;
+  color: #7c3aed;
+}
+
+.dark .btn-secondary:hover {
+  border-color: #8b5cf6;
+  color: #c4b5fd;
+}
+
+.tag {
+  @apply font-mono text-[11px] tracking-wide uppercase px-2 py-1 rounded-md border text-ink-700 dark:text-cloud-200;
+  border-color: rgba(15, 23, 42, 0.12);
+  background: rgba(139, 92, 246, 0.04);
+}
+
+.dark .tag {
+  border-color: rgba(139, 92, 246, 0.2);
+  background: rgba(139, 92, 246, 0.08);
+}
+
+/* Gradient text accent used for names / key phrases in headings */
+.text-gradient {
+  background-image: linear-gradient(135deg, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Active nav indicator */
+.nav-active-underline {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 4px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+}
