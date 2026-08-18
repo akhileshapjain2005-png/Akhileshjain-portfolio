@@ -166,19 +166,57 @@ export const portfolioData = {
 
   certificates: [
     {
-      title: 'Frontend Development Internship',
-      issuer: 'Codeveda Technologies',
-      date: '',
+      title: 'Certificate of Appreciation – NeuroNex Hackathon',
+      issuer: 'Rajeev Institute of Technology',
+      date: '2025',
       description:
-        'Completed a virtual frontend development internship focused on responsive web development using HTML.',
+        'Received a Certificate of Appreciation for outstanding performance in the hackathon organized by Rajeev Institute of Technology.',
+      image: '/assets/certificates/rajeev-hackathon-appreciation.jpg',
       link: '',
     },
     {
-      title: 'Certificate of Appreciation – NeuroNex Hackathon',
-      issuer: 'Rajeev Institute of Technology',
-      date: '',
+      title: 'Frontend Development Internship',
+      issuer: 'Codeveda Technologies',
+      date: 'Aug 25 – Sep 25, 2025',
       description:
-        'Received a Certificate of Appreciation for participation in the NeuroNex Hackathon.',
+        'Completed a Frontend Development Internship at Codeveda Technologies, effective 25 August 2025 to 25 September 2025.',
+      image: '/assets/certificates/codeveda-frontend-internship.jpg',
+      link: '',
+    },
+    {
+      title: 'Pravrutti National-Level Tech Fest',
+      issuer: 'M S Ramaiah University of Applied Sciences',
+      date: 'Oct 15–17, 2025',
+      description:
+        'Certificate of Participation for the National Level Tech Fest "Pravrutti", organized by M S Ramaiah University of Applied Sciences, Bengaluru.',
+      image: '/assets/certificates/pravrutti-tech-fest.jpg',
+      link: '',
+    },
+    {
+      title: 'Food Planet Health Webinar',
+      issuer: 'Food Planet Health / Vegan Outreach',
+      date: 'Mar 6, 2026',
+      description:
+        'Certificate of Completion for the Food Planet Health webinar.',
+      image: '/assets/certificates/food-planet-health-webinar.jpg',
+      link: '',
+    },
+    {
+      title: 'Career Orientation Workshop',
+      issuer: 'ABC Technology Training & Upskilling',
+      date: 'May 12, 2025',
+      description:
+        'Certificate of Participation for the Career Orientation Workshop, conducted by ABC Technology Training & Upskilling in collaboration with Bahubali College of Engineering.',
+      image: '/assets/certificates/career-orientation-workshop.jpg',
+      link: '',
+    },
+    {
+      title: 'Hackmitten 2.0',
+      issuer: 'Maharaja Institute of Technology, Thandavapura',
+      date: 'Sep 12–13, 2025',
+      description:
+        'Certificate of Participation for Hackmitten 2.0, a national-level hackathon organized by the Department of Computer Science & Engineering at Maharaja Institute of Technology Thandavapura.',
+      image: '/assets/certificates/hackmitten-2.0.jpg',
       link: '',
     },
   ],
