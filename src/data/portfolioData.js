@@ -211,6 +211,31 @@ export const portfolioData = {
       link: '',
     },
     {
+      title: 'Artificial Intelligence Workshop',
+      issuer: 'Indian Institute of Placement',
+      date: '',
+      description: 'Successfully attended a workshop on Artificial Intelligence.',
+      image: '/assets/certificates/artificial-intelligence-workshop.jpg',
+      link: '',
+    },
+    {
+      title: 'Data Science Workshop',
+      issuer: 'Indian Institute of Placement',
+      date: '',
+      description: 'Successfully attended a workshop on Data Science.',
+      image: '/assets/certificates/data-science-workshop.jpg',
+      link: '',
+    },
+    {
+      title: 'CSR Placement Drive – 2027',
+      issuer: 'Vstand4U Technologies Pvt. Ltd.',
+      date: '08/08/2026',
+      description:
+      'Selected for the Vstand4U Technologies CSR Placement Drive – 2027 and eligible to become a trainee under the CSR Training & Placement Program 2027.',
+      image: '/assets/certificates/vstand4u-csr-placement-drive-2027.jpg',
+      link: '',
+    },
+    {
       title: 'Hackmitten 2.0',
       issuer: 'Maharaja Institute of Technology, Thandavapura',
       date: 'Sep 12–13, 2025',
