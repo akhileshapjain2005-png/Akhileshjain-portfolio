@@ -171,7 +171,7 @@ export const portfolioData = {
       date: '2025',
       description:
         'Received a Certificate of Appreciation for outstanding performance in the hackathon organized by Rajeev Institute of Technology.',
-      image: '${import.meta.env.BASE_URL}/assets/certificates/rajeev-hackathon-appreciation.jpg',
+      image: '/assets/certificates/rajeev-hackathon-appreciation.jpg',
       link: '',
     },
     {
@@ -180,7 +180,7 @@ export const portfolioData = {
       date: 'Aug 25 – Sep 25, 2025',
       description:
         'Completed a Frontend Development Internship at Codeveda Technologies, effective 25 August 2025 to 25 September 2025.',
-      image: '${import.meta.env.BASE_URL}/assets/certificates/codeveda-frontend-internship.jpg',
+      image: '/assets/certificates/codeveda-frontend-internship.jpg',
       link: '',
     },
     {
@@ -189,7 +189,7 @@ export const portfolioData = {
       date: 'Oct 15–17, 2025',
       description:
         'Certificate of Participation for the National Level Tech Fest "Pravrutti", organized by M S Ramaiah University of Applied Sciences, Bengaluru.',
-      image: '${import.meta.env.BASE_URL}/assets/certificates/pravrutti-tech-fest.jpg',
+      image: '/assets/certificates/pravrutti-tech-fest.jpg',
       link: '',
     },
     {
@@ -198,7 +198,7 @@ export const portfolioData = {
       date: 'Mar 6, 2026',
       description:
         'Certificate of Completion for the Food Planet Health webinar.',
-      image: '${import.meta.env.BASE_URL}/assets/certificates/food-planet-health-webinar.jpg',
+      image: '/assets/certificates/food-planet-health-webinar.jpg',
       link: '',
     },
     {
@@ -207,7 +207,7 @@ export const portfolioData = {
       date: 'May 12, 2025',
       description:
         'Certificate of Participation for the Career Orientation Workshop, conducted by ABC Technology Training & Upskilling in collaboration with Bahubali College of Engineering.',
-      image: '${import.meta.env.BASE_URL}/assets/certificates/career-orientation-workshop.jpg',
+      image: '/assets/certificates/career-orientation-workshop.jpg',
       link: '',
     },
     {
@@ -215,7 +215,7 @@ export const portfolioData = {
       issuer: 'Indian Institute of Placement',
       date: '',
       description: 'Successfully attended a workshop on Artificial Intelligence.',
-      image: '${import.meta.env.BASE_URL}/assets/certificates/artificial-intelligence-workshop.jpg',
+      image: '/assets/certificates/artificial-intelligence-workshop.jpg',
       link: '',
     },
     {
@@ -223,7 +223,7 @@ export const portfolioData = {
       issuer: 'Indian Institute of Placement',
       date: '',
       description: 'Successfully attended a workshop on Data Science.',
-      image: '${import.meta.env.BASE_URL}/assets/certificates/data-science-workshop.jpg',
+      image: '/assets/certificates/data-science-workshop.jpg',
       link: '',
     },
     {
@@ -232,7 +232,7 @@ export const portfolioData = {
       date: '08/08/2026',
       description:
       'Selected for the Vstand4U Technologies CSR Placement Drive – 2027 and eligible to become a trainee under the CSR Training & Placement Program 2027.',
-      image: '${import.meta.env.BASE_URL}/assets/certificates/vstand4u-csr-placement-drive-2027.jpg',
+      image: '/assets/certificates/vstand4u-csr-placement-drive-2027.jpg',
       link: '',
     },
     {
@@ -241,7 +241,7 @@ export const portfolioData = {
       date: 'Sep 12–13, 2025',
       description:
         'Certificate of Participation for Hackmitten 2.0, a national-level hackathon organized by the Department of Computer Science & Engineering at Maharaja Institute of Technology Thandavapura.',
-      image: '${import.meta.env.BASE_URL}/assets/certificates/hackmitten-2.0.jpg',
+      image: '/assets/certificates/hackmitten-2.0.jpg',
       link: '',
     },
   ],
