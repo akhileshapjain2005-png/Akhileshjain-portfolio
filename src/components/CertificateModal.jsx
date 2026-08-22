@@ -76,6 +76,9 @@ export default function CertificateModal({ certificate, onClose }) {
 
         {certificate.image && !imageFailed ? (
           <div className="mt-5 flex justify-center rounded-xl border border-ink-900/10 dark:border-violet/15 bg-paper-100 dark:bg-ink-950/40 p-2 sm:p-3">
+            <p className="text-red-500 break-all">
+              IMAGE URL:{certificate.image}
+            </p>
             <img
               src={certificate.image}
               alt={`${certificate.title} certificate`}
