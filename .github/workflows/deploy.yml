@@ -29,6 +29,13 @@ jobs:
 
       - name: Build
         run: npm run build
+        - name: Check dist files
+  run: |
+    echo "Checking dist..."
+    ls -la dist
+    echo "Checking certificate images..."
+    ls -la dist/assets/certificates
+
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
